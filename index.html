@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Check</title>
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.zinc.min.css" rel="stylesheet"/>
+</head>
+<body class="container">
+<header>
+    <h1>Abobus</h1>
+</header>
+<main>
+    <article>
+        <form onsubmit="handleSubmit(event)" id="main-form">
+            <label for="password-input">
+                Password
+                <input name="password" type="password" aria-describedby="password-input-helper" id="password-input">
+                <small id="password-input-helper">
+                </small>
+            </label>
+            <input value="Submit" type="submit">
+        </form>
+    </article>
+</main>
+</body>
+<script src="validator.js"></script>
+<script src="index.js"></script>
+</html>
